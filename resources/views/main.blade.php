@@ -16,7 +16,7 @@
             
         <!-- end of .container -->
         @include('partials._javascript')
-        @include('partials._footer')
+        <!--@include('partials._footer')-->
         
 
 

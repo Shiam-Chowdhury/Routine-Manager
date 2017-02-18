@@ -28,17 +28,31 @@
             font-size: 112%;
         }
 
+        
+        div.container{
+            display: block;
+            
+            
+        }
+        .abc{
+            display: inline-block;
+            
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+
     </style>
     
-   <div class="container">
+  <div class="container"> 
     <div class="row">
-        <div class="col-md-6">
-            <form action="" method="post" id="fileForm" role="form">
+        <!--<div class="col-md-6">-->
+            <form class="abc" action="" method="post" id="fileForm" role="form">
             <fieldset><legend class="text-center">Valid information is required to register. <span class="req"><small> required *</small></span></legend>
 
             <div class="form-group">
             <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
-                    <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/> 
+                    <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" /> 
             </div>
 
             <div class="form-group">     
@@ -49,7 +63,7 @@
 
             <div class="form-group">
                 <label for="lastname"><span class="req">* </span> Last name: </label> 
-                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />  
+                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)"  required />  
                         <div id="errLast"></div>
             </div>
 
@@ -100,19 +114,13 @@
 
             </fieldset>
             </form><!-- ends register form -->
-
+<!--
 <script type="text/javascript">
   document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
-</script>
-        </div><!-- ends col-6 -->
-   
-            <div class="col-md-6">
-                <h1 class="page-header">TSW =|= </h1>
-                <p>Form can be used with TSW Login-Register applet available on Github<br><a href="https://github.com/tradesouthwest/tsw-login-register" title="github" target="_blank">https://github.com/tradesouthwest/tsw-login-register</a></a></p>
-                
-            </div>
-
-    </div>
-</div>
+</script>-->
+     
+   </div> 
+   </div>
 
 @endsection
+
